@@ -2,46 +2,36 @@
 <html>
 
 <head>
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DotaBrowser </title>
     <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-<body>
-    <style>
-     body{
-         background-color:#99ffcc
-     }   
-        
-        
-    </style>
-
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DotaChallenger</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                DATE
-            </div>
-        </nav>
+<body style="background-color: royalblue">
+    <header  >
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color:seagreen">
+                    <div class="container">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: aqua;font-size: 20px;" href="https://docs.opendota.com/#section/Authentication" 
+                        target="__blank"><b>DOTA CHALLENGER</b></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        DATE:
+                    </div>
+                </nav>
     </header>
-    <div class="container">
+    <div class="container" >
         <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
-                <form class="style.css" action="submission.html" method="POST">
-                        <label type="search"><b><u>ENTER PLAYER ID</b></u></label>
-                        <input type="name" name="searchbar" id="search" value="00000000">
-                        <input style="font-weight: bold"type="submit" name="sumbit" id="submit" value="SEARCH">
-                        
-                        
-                        
+        <main role="main" class="pb-3" >
+                <form style="color: aqua" action="" method="POST">
+                        <label type="search"><b>ENTER PLAYER ID</b></label>
+                        <input type="number" name="searchbar" id="search" min="00000000" max="99999999" step="2" required>
+                        <input style="font-weight: bold"type="submit" name="sumbit" id="submit" value="SEARCH">                       
                         </form>
-            <table class="table">
+            <table class="table" style="color: aqua">
                 <tbody>
                     
                     <tr>
@@ -78,10 +68,18 @@
             </table>
         </main>
     </div>
+
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2019- BRIAN WAMWEA (Liliesss)
-        </div>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color:seagreen">
+                    <div class="container">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: aqua">@BRIAN WAMWEA-2019</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                    </div>
+                </nav>
     </footer>
     <script src="./lib/jquery/dist/jquery.js"></script>
     <script src="./lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
